@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WardrobeJamia - Premium Fashion for Everyone. Shop the latest trends in pants, shirts, t-shirts, hoodies, jackets, sweaters and luxury perfumes.">
+    <title>WardrobeJamia - Premium Fashion for Everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👔%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <span>Free Shipping on Orders Over ₹2,999 | Use Code: WARDROBE15 for 15% Off</span>
+        </div>
+        <div class="header-main">
+            <a href="index.html" class="logo">Wardrobe<span>Jamia</span></a>
+            <nav class="header-nav">
+                <ul class="nav-links">
+                    <li><a href="#" data-category="all">New Arrivals</a></li>
+                    <li><a href="#" data-category="shirts">Shirts</a></li>
+                    <li><a href="#" data-category="pants">Pants</a></li>
+                    <li><a href="#" data-category="perfumes">Perfumes</a></li>
+                    <li><a href="#" data-category="all">Sale</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <button class="header-icon" id="searchBtn" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="header-icon" id="wishlistBtn" aria-label="Wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </button>
+                <button class="header-icon" id="cartBtn" aria-label="Shopping Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Navigation -->
+    <nav class="category-nav">
+        <div class="category-list" id="categoryList">
+            <button class="category-btn active" data-category="all">All Products</button>
+            <button class="category-btn" data-category="pants">Pants</button>
+            <button class="category-btn" data-category="shirts">Shirts</button>
+            <button class="category-btn" data-category="tshirts">T-Shirts</button>
+            <button class="category-btn" data-category="polo">Polo Shirts</button>
+            <button class="category-btn" data-category="hoodies">Hoodies</button>
+            <button class="category-btn" data-category="jackets">Jackets</button>
+            <button class="category-btn" data-category="sweaters">Sweaters</button>
+            <button class="category-btn" data-category="perfumes">Perfumes</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-subtitle">New Season Collection</p>
+            <h1 class="hero-title">Elevate Your Style</h1>
+            <p class="hero-description">Discover premium fashion that blends luxury with everyday comfort. Shop the
+                latest trends now.</p>
+            <a href="#products" class="hero-btn">Shop Now</a>
+        </div>
+        <div class="hero-pattern"></div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content" id="products">
+        <!-- Filter Sidebar -->
+        <aside class="filter-sidebar" id="filterSidebar">
+            <div class="filter-header">
+                <h2 class="filter-title">Filters</h2>
+                <button class="filter-clear" id="clearFilters">Clear All</button>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="filter-group">
+                <h3 class="filter-group-title">Category</h3>
+                <div class="filter-options" id="categoryFilters">
+                    <label class="filter-option">
+                        <input type="checkbox" value="pants" name="category"> Pants
+                        <span class="count" data-count="pants"></span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="shirts" name="category"> Shirts
+                        <span class="count" data-count="shirts"></span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="tshirts" name="category"> T-Shirts
+                        <span class="count" data-count="tshirts"></span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="polo" name="category"> Polo Shirts
+                        <span class="count" data-count="polo"></span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="hoodies" name="category"> Hoodies
+                        <span class="count" data-count="hoodies"></span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="jackets" name="category"> Jackets
+                        <span class="count" data-count="jackets"></span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="sweaters" name="category"> Sweaters
+                        <span class="count" data-count="sweaters"></span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="perfumes" name="category"> Perfumes
+                        <span class="count" data-count="perfumes"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Price Filter -->
+            <div class="filter-group">
+                <h3 class="filter-group-title">Price Range</h3>
+                <div class="price-range">
+                    <div class="price-inputs">
+                        <input type="number" class="price-input" id="minPrice" placeholder="₹ Min" min="0">
+                        <input type="number" class="price-input" id="maxPrice" placeholder="₹ Max" min="0">
+                    </div>
+                    <input type="range" class="price-slider" id="priceSlider" min="0" max="10000" value="10000">
+                </div>
+            </div>
+
+            <!-- Size Filter -->
+            <div class="filter-group">
+                <h3 class="filter-group-title">Size</h3>
+                <div class="size-options" id="sizeFilters">
+                    <button class="size-btn" data-size="S">S</button>
+                    <button class="size-btn" data-size="M">M</button>
+                    <button class="size-btn" data-size="L">L</button>
+                    <button class="size-btn" data-size="XL">XL</button>
+                    <button class="size-btn" data-size="XXL">XXL</button>
+                </div>
+            </div>
+
+            <!-- Color Filter -->
+            <div class="filter-group">
+                <h3 class="filter-group-title">Color</h3>
+                <div class="color-options" id="colorFilters">
+                    <button class="color-btn" data-color="black" style="background: #1A1A1A;" title="Black"></button>
+                    <button class="color-btn" data-color="white" style="background: #FFFFFF; border: 1px solid #E5E5E5;"
+                        title="White"></button>
+                    <button class="color-btn" data-color="navy" style="background: #1E3A5F;" title="Navy"></button>
+                    <button class="color-btn" data-color="grey" style="background: #808080;" title="Grey"></button>
+                    <button class="color-btn" data-color="brown" style="background: #8B4513;" title="Brown"></button>
+                    <button class="color-btn" data-color="beige" style="background: #F5F5DC;" title="Beige"></button>
+                    <button class="color-btn" data-color="olive" style="background: #556B2F;" title="Olive"></button>
+                    <button class="color-btn" data-color="burgundy" style="background: #722F37;"
+                        title="Burgundy"></button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Products Section -->
+        <section class="products-section">
+            <div class="products-header">
+                <p class="products-count">Showing <strong id="productCount">0</strong> products</p>
+                <div class="sort-select">
+                    <label for="sortBy">Sort by:</label>
+                    <select id="sortBy">
+                        <option value="popularity">Popularity</option>
+                        <option value="newest">Newest</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be rendered here by JavaScript -->
+            </div>
+            <div class="no-results" id="noResults" style="display: none;">
+                <h3>No products found</h3>
+                <p>Try adjusting your filters to find what you're looking for.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Mobile Filter Toggle -->
+    <button class="mobile-filter-toggle" id="mobileFilterToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+        </svg>
+        Filters
+    </button>
+
+    <!-- Cart Modal -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h2 class="cart-title">Shopping Cart</h2>
+            <button class="cart-close" id="cartClose">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty" id="cartEmpty">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+                <p>Your cart is empty</p>
+                <button class="hero-btn" onclick="closeCart()">Continue Shopping</button>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display: none;">
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">₹0</span>
+            </div>
+            <p class="cart-note">Shipping & taxes calculated at checkout</p>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+            <button class="continue-shopping" onclick="closeCart()">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div class="cart-overlay" id="quickViewOverlay"></div>
+    <div class="cart-modal" id="quickViewModal" style="max-width: 900px;">
+        <div class="cart-header">
+            <h2 class="cart-title">Quick View</h2>
+            <button class="cart-close" id="quickViewClose">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="product-detail" id="quickViewContent" style="padding: 1.5rem;">
+            <!-- Quick view content will be rendered here -->
+        </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <span class="logo">Wardrobe<span>Jamia</span></span>
+            <button class="mobile-nav-close" id="mobileNavClose">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24"
+                    height="24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#" onclick="filterByCategory('all'); closeMobileNav();">All Products</a></li>
+            <li><a href="#" onclick="filterByCategory('pants'); closeMobileNav();">Pants</a></li>
+            <li><a href="#" onclick="filterByCategory('shirts'); closeMobileNav();">Shirts</a></li>
+            <li><a href="#" onclick="filterByCategory('tshirts'); closeMobileNav();">T-Shirts</a></li>
+            <li><a href="#" onclick="filterByCategory('polo'); closeMobileNav();">Polo Shirts</a></li>
+            <li><a href="#" onclick="filterByCategory('hoodies'); closeMobileNav();">Hoodies</a></li>
+            <li><a href="#" onclick="filterByCategory('jackets'); closeMobileNav();">Jackets</a></li>
+            <li><a href="#" onclick="filterByCategory('sweaters'); closeMobileNav();">Sweaters</a></li>
+            <li><a href="#" onclick="filterByCategory('perfumes'); closeMobileNav();">Perfumes</a></li>
+        </ul>
+    </nav>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-overlay" id="checkoutOverlay"></div>
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-header">
+            <button class="checkout-back" id="checkoutBack" onclick="goToPreviousStep()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <div class="checkout-steps">
+                <div class="step active" data-step="1">
+                    <span class="step-number">1</span>
+                    <span class="step-label">Address</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step" data-step="2">
+                    <span class="step-number">2</span>
+                    <span class="step-label">Payment</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step" data-step="3">
+                    <span class="step-number">3</span>
+                    <span class="step-label">Confirm</span>
+                </div>
+            </div>
+            <button class="checkout-close" id="checkoutClose" onclick="closeCheckout()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="checkout-content">
+            <!-- Step 1: Address -->
+            <div class="checkout-step active" id="step1">
+                <h2 class="checkout-section-title">Delivery Address</h2>
+                <form class="address-form" id="addressForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="fullName" class="form-input" placeholder=" " required>
+                            <label class="form-label" for="fullName">Full Name *</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" class="form-input" placeholder=" " pattern="[0-9]{10}"
+                                required>
+                            <label class="form-label" for="phone">Phone Number *</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="address1" class="form-input" placeholder=" " required>
+                        <label class="form-label" for="address1">Address Line 1 *</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="address2" class="form-input" placeholder=" ">
+                        <label class="form-label" for="address2">Address Line 2 (Optional)</label>
+                    </div>
+                    <div class="form-row form-row-3">
+                        <div class="form-group">
+                            <input type="text" id="city" class="form-input" placeholder=" " required>
+                            <label class="form-label" for="city">City *</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="state" class="form-input form-select" required>
+                                <option value="">Select State</option>
+                                <option value="AN">Andaman and Nicobar Islands</option>
+                                <option value="AP">Andhra Pradesh</option>
+                                <option value="AR">Arunachal Pradesh</option>
+                                <option value="AS">Assam</option>
+                                <option value="BR">Bihar</option>
+                                <option value="CH">Chandigarh</option>
+                                <option value="CT">Chhattisgarh</option>
+                                <option value="DL">Delhi</option>
+                                <option value="GA">Goa</option>
+                                <option value="GJ">Gujarat</option>
+                                <option value="HR">Haryana</option>
+                                <option value="HP">Himachal Pradesh</option>
+                                <option value="JK">Jammu and Kashmir</option>
+                                <option value="JH">Jharkhand</option>
+                                <option value="KA">Karnataka</option>
+                                <option value="KL">Kerala</option>
+                                <option value="MP">Madhya Pradesh</option>
+                                <option value="MH">Maharashtra</option>
+                                <option value="MN">Manipur</option>
+                                <option value="ML">Meghalaya</option>
+                                <option value="MZ">Mizoram</option>
+                                <option value="NL">Nagaland</option>
+                                <option value="OR">Odisha</option>
+                                <option value="PB">Punjab</option>
+                                <option value="RJ">Rajasthan</option>
+                                <option value="SK">Sikkim</option>
+                                <option value="TN">Tamil Nadu</option>
+                                <option value="TG">Telangana</option>
+                                <option value="TR">Tripura</option>
+                                <option value="UP">Uttar Pradesh</option>
+                                <option value="UT">Uttarakhand</option>
+                                <option value="WB">West Bengal</option>
+                            </select>
+                            <label class="form-label form-label-select" for="state">State *</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="pincode" class="form-input" placeholder=" " pattern="[0-9]{6}"
+                                required>
+                            <label class="form-label" for="pincode">Pincode *</label>
+                        </div>
+                    </div>
+                    <div class="address-type">
+                        <span class="address-type-label">Address Type</span>
+                        <div class="address-type-options">
+                            <label class="address-type-option">
+                                <input type="radio" name="addressType" value="home" checked>
+                                <span class="address-type-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                                    </svg>
+                                    Home
+                                </span>
+                            </label>
+                            <label class="address-type-option">
+                                <input type="radio" name="addressType" value="office">
+                                <span class="address-type-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                    </svg>
+                                    Office
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Step 2: Payment -->
+            <div class="checkout-step" id="step2">
+                <h2 class="checkout-section-title">Payment Method</h2>
+                <div class="payment-methods">
+                    <label class="payment-method">
+                        <input type="radio" name="paymentMethod" value="upi" checked
+                            onchange="switchPaymentMethod('upi')">
+                        <div class="payment-method-card">
+                            <div class="payment-method-header">
+                                <div class="payment-method-icon upi-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18l6.9 3.45L12 11.09 5.1 7.63 12 4.18zM4 8.82l7 3.5v7.36l-7-3.5V8.82zm9 10.86v-7.36l7-3.5v7.36l-7 3.5z" />
+                                    </svg>
+                                </div>
+                                <div class="payment-method-info">
+                                    <span class="payment-method-name">UPI</span>
+                                    <span class="payment-method-desc">Google Pay, PhonePe, Paytm & more</span>
+                                </div>
+                            </div>
+                            <div class="payment-check">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="payment-method">
+                        <input type="radio" name="paymentMethod" value="card" onchange="switchPaymentMethod('card')">
+                        <div class="payment-method-card">
+                            <div class="payment-method-header">
+                                <div class="payment-method-icon card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                                    </svg>
+                                </div>
+                                <div class="payment-method-info">
+                                    <span class="payment-method-name">Credit / Debit Card</span>
+                                    <span class="payment-method-desc">Visa, Mastercard, RuPay</span>
+                                </div>
+                            </div>
+                            <div class="payment-check">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="payment-method">
+                        <input type="radio" name="paymentMethod" value="cod" onchange="switchPaymentMethod('cod')">
+                        <div class="payment-method-card">
+                            <div class="payment-method-header">
+                                <div class="payment-method-icon cod-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    </svg>
+                                </div>
+                                <div class="payment-method-info">
+                                    <span class="payment-method-name">Cash on Delivery</span>
+                                    <span class="payment-method-desc">Pay when you receive</span>
+                                </div>
+                            </div>
+                            <div class="payment-check">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- UPI Details -->
+                <div class="payment-details active" id="upiDetails">
+                    <h3 class="payment-details-title">Select UPI App</h3>
+                    <div class="upi-apps">
+                        <label class="upi-app">
+                            <input type="radio" name="upiApp" value="gpay" checked>
+                            <div class="upi-app-card">
+                                <div class="upi-app-icon gpay">
+                                    <svg viewBox="0 0 24 24">
+                                        <path fill="#4285F4"
+                                            d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" />
+                                    </svg>
+                                </div>
+                                <span>Google Pay</span>
+                            </div>
+                        </label>
+                        <label class="upi-app">
+                            <input type="radio" name="upiApp" value="phonepe">
+                            <div class="upi-app-card">
+                                <div class="upi-app-icon phonepe">
+                                    <svg viewBox="0 0 24 24">
+                                        <path fill="#5f259f"
+                                            d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm3.248 17.635l-4.453-3.56v5.925H8.5V4h2.295v7.07l4.453-3.57V10l-4.453 3.565 4.453 3.57v.5z" />
+                                    </svg>
+                                </div>
+                                <span>PhonePe</span>
+                            </div>
+                        </label>
+                        <label class="upi-app">
+                            <input type="radio" name="upiApp" value="paytm">
+                            <div class="upi-app-card">
+                                <div class="upi-app-icon paytm">
+                                    <svg viewBox="0 0 24 24">
+                                        <path fill="#00BAF2"
+                                            d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.5 16.5h-11v-9h11v9z" />
+                                    </svg>
+                                </div>
+                                <span>Paytm</span>
+                            </div>
+                        </label>
+                        <label class="upi-app">
+                            <input type="radio" name="upiApp" value="other">
+                            <div class="upi-app-card">
+                                <div class="upi-app-icon other">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                    </svg>
+                                </div>
+                                <span>Other UPI</span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-group upi-id-input" id="upiIdInput" style="display: none;">
+                        <input type="text" id="upiId" class="form-input" placeholder=" ">
+                        <label class="form-label" for="upiId">Enter UPI ID (e.g. name@upi)</label>
+                    </div>
+                </div>
+
+                <!-- Card Details -->
+                <div class="payment-details" id="cardDetails">
+                    <h3 class="payment-details-title">Card Details</h3>
+                    <div class="card-form">
+                        <div class="form-group">
+                            <input type="text" id="cardNumber" class="form-input" placeholder=" " maxlength="19"
+                                oninput="formatCardNumber(this)">
+                            <label class="form-label" for="cardNumber">Card Number</label>
+                            <div class="card-type-icons">
+                                <span class="card-type visa">VISA</span>
+                                <span class="card-type mastercard">MC</span>
+                                <span class="card-type rupay">RuPay</span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="cardExpiry" class="form-input" placeholder=" " maxlength="5"
+                                    oninput="formatExpiry(this)">
+                                <label class="form-label" for="cardExpiry">MM/YY</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="cardCvv" class="form-input" placeholder=" " maxlength="4">
+                                <label class="form-label" for="cardCvv">CVV</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="cardName" class="form-input" placeholder=" ">
+                            <label class="form-label" for="cardName">Cardholder Name</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COD Details -->
+                <div class="payment-details" id="codDetails">
+                    <div class="cod-info">
+                        <div class="cod-info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div class="cod-info-text">
+                            <p><strong>Pay on Delivery</strong></p>
+                            <p>Pay cash or use UPI when your order arrives. Please keep exact change ready for faster
+                                delivery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Confirmation -->
+            <div class="checkout-step" id="step3">
+                <div class="order-success" id="orderSuccess" style="display: none;">
+                    <div class="success-animation">
+                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                            <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none" />
+                            <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                    </div>
+                    <h2 class="success-title">Order Placed Successfully!</h2>
+                    <p class="success-message">Thank you for your order. You will receive a confirmation shortly.</p>
+                    <p class="success-order-id">Order ID: <strong id="orderId">WJ-XXXXXX</strong></p>
+                    <button class="hero-btn" onclick="closeCheckout(); location.reload();">Continue Shopping</button>
+                </div>
+
+                <div class="order-review" id="orderReview">
+                    <h2 class="checkout-section-title">Review Order</h2>
+
+                    <div class="review-section">
+                        <div class="review-header">
+                            <h3>Delivery Address</h3>
+                            <button class="review-edit" onclick="goToStep(1)">Edit</button>
+                        </div>
+                        <div class="review-content" id="reviewAddress">
+                            <!-- Filled by JS -->
+                        </div>
+                    </div>
+
+                    <div class="review-section">
+                        <div class="review-header">
+                            <h3>Payment Method</h3>
+                            <button class="review-edit" onclick="goToStep(2)">Edit</button>
+                        </div>
+                        <div class="review-content" id="reviewPayment">
+                            <!-- Filled by JS -->
+                        </div>
+                    </div>
+
+                    <div class="review-section">
+                        <h3>Order Summary</h3>
+                        <div class="review-items" id="reviewItems">
+                            <!-- Filled by JS -->
+                        </div>
+                    </div>
+
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Subtotal</span>
+                            <span id="reviewSubtotal">₹0</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Shipping</span>
+                            <span id="reviewShipping">FREE</span>
+                        </div>
+                        <div class="total-row total-row-final">
+                            <span>Total</span>
+                            <span id="reviewTotal">₹0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout-footer">
+            <div class="checkout-summary">
+                <span class="checkout-items" id="checkoutItemCount">0 items</span>
+                <span class="checkout-total" id="checkoutTotal">₹0</span>
+            </div>
+            <button class="checkout-continue-btn" id="checkoutContinueBtn" onclick="handleCheckoutContinue()">
+                <span id="checkoutBtnText">Continue to Payment</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <span class="logo">Wardrobe<span>Jamia</span></span>
+                <p>Your destination for premium fashion that combines luxury aesthetics with everyday affordability.
+                    Quality craftsmanship meets modern style.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#" onclick="filterByCategory('pants');">Pants</a></li>
+                    <li><a href="#" onclick="filterByCategory('shirts');">Shirts</a></li>
+                    <li><a href="#" onclick="filterByCategory('tshirts');">T-Shirts</a></li>
+                    <li><a href="#" onclick="filterByCategory('hoodies');">Hoodies</a></li>
+                    <li><a href="#" onclick="filterByCategory('perfumes');">Perfumes</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 WardrobeJamia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
