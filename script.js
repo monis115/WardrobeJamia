@@ -732,6 +732,1234 @@ const products = [
         isNew: true,
         popularity: 92
     }
+    ,
+    // ============ NEW ARRIVALS (BATCH 2) ============
+
+    // --- PANTS ---
+    {
+        id: 48,
+        name: "Olive Slim Cargo Pants",
+        category: "pants",
+        subcategory: "Cargo Pants",
+        price: 2199,
+        discountedPrice: 1699,
+        description: "Tactical style slim fit cargo pants with multiple utility pockets. Durable cotton fabric.",
+        sizes: ["28", "30", "32", "34", "36"],
+        colors: ["olive"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1517438476312-10d79c077509?w=600"],
+        isNew: true,
+        popularity: 88
+    },
+    {
+        id: 49,
+        name: "Formal Navy Trousers",
+        category: "pants",
+        subcategory: "Trousers",
+        price: 1899,
+        discountedPrice: 1499,
+        description: "Sharp and sophisticated navy trousers for the modern professional. Crease-resistant fabric.",
+        sizes: ["28", "30", "32", "34", "36"],
+        colors: ["navy"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=600"],
+        isNew: false,
+        popularity: 82
+    },
+    {
+        id: 50,
+        name: "Beige Linen Summer Pants",
+        category: "pants",
+        subcategory: "Linen Pants",
+        price: 2499,
+        discountedPrice: 1999,
+        description: "Breathable linen pants, perfect for beach weddings or summer parties. Relaxed fit.",
+        sizes: ["30", "32", "34"],
+        colors: ["beige"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1542272604-787c3835535d?w=600"],
+        isNew: true,
+        popularity: 91
+    },
+    {
+        id: 51,
+        name: "Urban Black Joggers",
+        category: "pants",
+        subcategory: "Joggers",
+        price: 1299,
+        discountedPrice: 999,
+        description: "Street-ready black joggers with cuffed ankles. Soft fleece lining for comfort.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["black"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=600"],
+        isNew: false,
+        popularity: 95
+    },
+    {
+        id: 52,
+        name: "Charcoal Woolen pants",
+        category: "pants",
+        subcategory: "Trousers",
+        price: 2999,
+        discountedPrice: 2499,
+        description: "Heavyweight wool blend trousers for winter elegance. Warm and stylish.",
+        sizes: ["30", "32", "34", "36"],
+        colors: ["grey"],
+        stock: "low-stock",
+        images: ["https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=600"],
+        isNew: false,
+        popularity: 78
+    },
+
+    // --- SHIRTS ---
+    {
+        id: 53,
+        name: "Premium White Linen Shirt",
+        category: "shirts",
+        subcategory: "Casual Shirts",
+        price: 2599,
+        discountedPrice: 2199,
+        description: "The ultimate summer staple. 100% pure linen in crisp white.",
+        sizes: ["M", "L", "XL"],
+        colors: ["white"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1589156280159-27698a70f29e?w=600"],
+        isNew: false,
+        popularity: 94
+    },
+    {
+        id: 54,
+        name: "Midnight Satin Party Shirt",
+        category: "shirts",
+        subcategory: "Party Wear",
+        price: 1999,
+        discountedPrice: 1599,
+        description: "Glossy black satin shirt for clubbing and evening events. Slim fit.",
+        sizes: ["S", "M", "L"],
+        colors: ["black"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=600"],
+        isNew: true,
+        popularity: 89
+    },
+    {
+        id: 55,
+        name: "Blue Striped Office Shirt",
+        category: "shirts",
+        subcategory: "Formal Shirts",
+        price: 1699,
+        discountedPrice: 1299,
+        description: "Classic pinstripe design for the boardroom. Easy-iron cotton blend.",
+        sizes: ["38", "40", "42", "44"],
+        colors: ["navy", "white"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600"],
+        isNew: false,
+        popularity: 85
+    },
+    {
+        id: 56,
+        name: "Floral Resort Shirt",
+        category: "shirts",
+        subcategory: "Casual Shirts",
+        price: 1499,
+        discountedPrice: 1199,
+        description: "Vibrant floral print shirt for vacations and weekends. Cuban collar.",
+        sizes: ["M", "L", "XL"],
+        colors: ["navy", "red"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600"],
+        isNew: true,
+        popularity: 92
+    },
+    {
+        id: 57,
+        name: "Rugged Denim Shirt",
+        category: "shirts",
+        subcategory: "Casual Shirts",
+        price: 2299,
+        discountedPrice: 1899,
+        description: "Stone-washed denim shirt with snap buttons. western yoke styling.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["navy"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1574634534894-89d7576c8259?w=600"],
+        isNew: false,
+        popularity: 88
+    },
+
+    // --- T-SHIRTS & POLOS ---
+    {
+        id: 58,
+        name: "Royal Navy Polo",
+        category: "polo",
+        subcategory: "Polo Suits",
+        price: 1299,
+        discountedPrice: 999,
+        description: "Classic fit polo with embroidered logo. Ribbed collar and cuffs.",
+        sizes: ["M", "L", "XL", "XXL"],
+        colors: ["navy"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?w=600"],
+        isNew: false,
+        popularity: 90
+    },
+    {
+        id: 59,
+        name: "Abstract Art Graphic Tee",
+        category: "tshirts",
+        subcategory: "T-Shirts",
+        price: 899,
+        discountedPrice: 699,
+        description: "Minimalist abstract line art printed on premium organic cotton.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["white"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600"],
+        isNew: true,
+        popularity: 96
+    },
+    {
+        id: 60,
+        name: "Muscle Fit Henley",
+        category: "tshirts",
+        subcategory: "T-Shirts",
+        price: 999,
+        discountedPrice: 799,
+        description: "3-button henley tee designed to accentuate your physique. Stretchy fabric.",
+        sizes: ["M", "L", "XL"],
+        colors: ["black"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600"],
+        isNew: false,
+        popularity: 84
+    },
+    {
+        id: 61,
+        name: "Basics Grey V-Neck",
+        category: "tshirts",
+        subcategory: "T-Shirts",
+        price: 699,
+        discountedPrice: 499,
+        description: "Simple, versatile grey V-neck for layering.",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+        colors: ["grey"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600"],
+        isNew: false,
+        popularity: 79
+    },
+    {
+        id: 62,
+        name: "Maroon Pique Polo",
+        category: "polo",
+        subcategory: "Polo Shirts",
+        price: 1399,
+        discountedPrice: 1099,
+        description: "Deep maroon polo shirt. Smart casual essential.",
+        sizes: ["M", "L", "XL"],
+        colors: ["burgundy"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600"],
+        isNew: true,
+        popularity: 87
+    },
+
+    // --- HOODIES ---
+    {
+        id: 63,
+        name: "Varsity Red Hoodie",
+        category: "hoodies",
+        subcategory: "Hoodies",
+        price: 2499,
+        discountedPrice: 1999,
+        description: "Bright red hoodie with college varsity lettering. Thick fleece.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["red"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600"],
+        isNew: false,
+        popularity: 93
+    },
+    {
+        id: 64,
+        name: "Minimalist White Zip Hoodie",
+        category: "hoodies",
+        subcategory: "Hoodies",
+        price: 2299,
+        discountedPrice: 1799,
+        description: "Clean white zip-up hoodie. Silver metal zipper.",
+        sizes: ["S", "M", "L"],
+        colors: ["white"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600"],
+        isNew: true,
+        popularity: 88
+    },
+    {
+        id: 65,
+        name: "Tie-Dye Swirl Hoodie",
+        category: "hoodies",
+        subcategory: "Hoodies",
+        price: 2699,
+        discountedPrice: 2199,
+        description: "Hand-dyed psychedelic pattern. Each piece is unique.",
+        sizes: ["M", "L", "XL"],
+        colors: ["navy", "white"],
+        stock: "low-stock",
+        images: ["https://images.unsplash.com/photo-1589156280159-27698a70f29e?w=600"],
+        isNew: true,
+        popularity: 97
+    },
+    {
+        id: 66,
+        name: "Tech Fleece Black Hoodie",
+        category: "hoodies",
+        subcategory: "Hoodies",
+        price: 3499,
+        discountedPrice: 2999,
+        description: "Advanced tech fleece fabric for warmth without weight. Modern cut.",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+        colors: ["black"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600"],
+        isNew: false,
+        popularity: 94
+    },
+
+    // --- JACKETS & SWEATERS ---
+    {
+        id: 67,
+        name: "Vintage Suede Jacket",
+        category: "jackets",
+        subcategory: "Jackets",
+        price: 4999,
+        discountedPrice: 3999,
+        description: "Faux suede jacket in tan brown. Sherlock collar.",
+        sizes: ["M", "L", "XL"],
+        colors: ["brown"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600"],
+        isNew: false,
+        popularity: 86
+    },
+    {
+        id: 68,
+        name: "Urban Windbreaker",
+        category: "jackets",
+        subcategory: "Jackets",
+        price: 1999,
+        discountedPrice: 1499,
+        description: "Lightweight water-resistant windbreaker. Color block design.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["black", "grey"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600"],
+        isNew: true,
+        popularity: 89
+    },
+    {
+        id: 69,
+        name: "Classic Varsity Jacket",
+        category: "jackets",
+        subcategory: "Jackets",
+        price: 2999,
+        discountedPrice: 2499,
+        description: "American college style varsity jacket. Wool body, faux leather sleeves.",
+        sizes: ["M", "L", "XL"],
+        colors: ["navy", "white"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1559551409-dadc959f76b8?w=600"],
+        isNew: false,
+        popularity: 95
+    },
+    {
+        id: 70,
+        name: "Beige Trench Coat",
+        category: "jackets",
+        subcategory: "Coats",
+        price: 5999,
+        discountedPrice: 4999,
+        description: "Long-line trench coat for rainy days. Double breasted.",
+        sizes: ["M", "L", "XL"],
+        colors: ["beige"],
+        stock: "low-stock",
+        images: ["https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600"],
+        isNew: false,
+        popularity: 82
+    },
+    {
+        id: 71,
+        name: "Merino Crew Neck Navy",
+        category: "sweaters",
+        subcategory: "Sweaters",
+        price: 2499,
+        discountedPrice: 1999,
+        description: "Fine gauge merino wool sweater. Perfect for office over a shirt.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["navy"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?w=600"],
+        isNew: false,
+        popularity: 90
+    },
+    {
+        id: 72,
+        name: "Chunky Knit Turtleneck",
+        category: "sweaters",
+        subcategory: "Sweaters",
+        price: 2299,
+        discountedPrice: 1899,
+        description: "Thick cable knit turtleneck for cozy warmth.",
+        sizes: ["S", "M", "L"],
+        colors: ["grey"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?w=600"],
+        isNew: true,
+        popularity: 85
+    },
+    {
+        id: 73,
+        name: "Black Button Cardigan",
+        category: "sweaters",
+        subcategory: "Cardigans",
+        price: 1899,
+        discountedPrice: 1499,
+        description: "Grandad collar button cardigan. Relaxed fit.",
+        sizes: ["M", "L", "XL"],
+        colors: ["black"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?w=600"],
+        isNew: false,
+        popularity: 79
+    },
+    {
+        id: 74,
+        name: "Breton Stripe Sweater",
+        category: "sweaters",
+        subcategory: "Sweaters",
+        price: 2199,
+        discountedPrice: 1699,
+        description: "Nautical inspired striped sweater. Cotton blend.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["white", "navy"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?w=600"],
+        isNew: true,
+        popularity: 88
+    },
+
+    // --- PERFUMES ---
+    {
+        id: 75,
+        name: "Eros Flame Edition",
+        category: "perfumes",
+        subcategory: "Perfumes",
+        price: 3299,
+        discountedPrice: 2499,
+        description: "First Copy Luxury. Inspired by Versace Eros Flame. Citrus, spicy, woody and amber notes.",
+        sizes: ["100ml"],
+        colors: ["red"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1541643600914-78b084683601?w=600"],
+        isNew: true,
+        popularity: 94
+    },
+    {
+        id: 76,
+        name: "Dylan Blue Pour Homme",
+        category: "perfumes",
+        subcategory: "Perfumes",
+        price: 2999,
+        discountedPrice: 2199,
+        description: "First Copy Luxury. Inspired by Versace Dylan Blue. Aquatic, fresh, fig leaf and violet leaves.",
+        sizes: ["100ml"],
+        colors: ["navy"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600"],
+        isNew: false,
+        popularity: 91
+    },
+    {
+        id: 77,
+        name: "Millionaire Gold",
+        category: "perfumes",
+        subcategory: "Perfumes",
+        price: 3499,
+        discountedPrice: 2699,
+        description: "First Copy Luxury. Inspired by 1 Million. Salty-sweet, spicy, leather fragrance.",
+        sizes: ["100ml"],
+        colors: ["gold"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600"],
+        isNew: true,
+        popularity: 96
+    }
+    ,
+    // ============ NEW ARRIVALS (BATCH 3 - 50 ITEMS) ============
+
+    // --- NEW PANTS (10 Items) ---
+    {
+        id: 78,
+        name: "Slim Fit Chinos Grey",
+        category: "pants",
+        subcategory: "Chinos",
+        price: 1899,
+        discountedPrice: 1499,
+        description: "Versatile grey chinos with a tailored slim fit. Cotton-stretch blend.",
+        sizes: ["28", "30", "32", "34", "36"],
+        colors: ["grey"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=600"],
+        isNew: true,
+        popularity: 85
+    },
+    {
+        id: 79,
+        name: "Olive Green Regular Fit",
+        category: "pants",
+        subcategory: "Casual Pants",
+        price: 1699,
+        discountedPrice: 1299,
+        description: "Comfortable regular fit pants in olive green. Ideal for daily wear.",
+        sizes: ["30", "32", "34", "36"],
+        colors: ["olive"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600"],
+        isNew: false,
+        popularity: 80
+    },
+    {
+        id: 80,
+        name: "Black Techwear Cargo",
+        category: "pants",
+        subcategory: "Cargo Pants",
+        price: 2499,
+        discountedPrice: 1999,
+        description: "Futuristic techwear cargo pants with straps and deep pockets.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["black"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=600"],
+        isNew: true,
+        popularity: 92
+    },
+    {
+        id: 81,
+        name: "Navy Pleated Trousers",
+        category: "pants",
+        subcategory: "Formal Pants",
+        price: 2199,
+        discountedPrice: 1799,
+        description: "Classic pleated design for a gentleman's look. Navy blue.",
+        sizes: ["30", "32", "34", "36"],
+        colors: ["navy"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600"],
+        isNew: false,
+        popularity: 83
+    },
+    {
+        id: 82,
+        name: "Beige Corduroy Pants",
+        category: "pants",
+        subcategory: "Casual Pants",
+        price: 2299,
+        discountedPrice: 1899,
+        description: "Soft textured corduroy pants in beige. Vintage 70s vibe.",
+        sizes: ["28", "30", "32", "34"],
+        colors: ["beige"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1582552938357-32b906df40cb?w=600"],
+        isNew: false,
+        popularity: 79
+    },
+    {
+        id: 83,
+        name: "White Linen Drawstring",
+        category: "pants",
+        subcategory: "Linen Pants",
+        price: 2599,
+        discountedPrice: 2099,
+        description: "Ultra-relaxed linen pants with drawstring waist. Pure white.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["white"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1542272604-787c3835535d?w=600"],
+        isNew: true,
+        popularity: 88
+    },
+    {
+        id: 84,
+        name: "Skinny Ripped Jeans",
+        category: "pants",
+        subcategory: "Jeans",
+        price: 2799,
+        discountedPrice: 2299,
+        description: "Edgy skinny fit jeans with knee rips. High stretch denim.",
+        sizes: ["28", "30", "32", "34"],
+        colors: ["black"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=600"],
+        isNew: false,
+        popularity: 91
+    },
+    {
+        id: 85,
+        name: "Checked Formal Trousers",
+        category: "pants",
+        subcategory: "Formal Pants",
+        price: 2099,
+        discountedPrice: 1699,
+        description: "Subtle grey check pattern suitable for variable office environments.",
+        sizes: ["30", "32", "34", "36"],
+        colors: ["grey"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?w=600"],
+        isNew: false,
+        popularity: 81
+    },
+    {
+        id: 86,
+        name: "Athletic Grey Joggers",
+        category: "pants",
+        subcategory: "Joggers",
+        price: 1399,
+        discountedPrice: 1099,
+        description: "Performance fabric joggers for gym or running.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["grey"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600"],
+        isNew: false,
+        popularity: 86
+    },
+    {
+        id: 87,
+        name: "Brown Chinos",
+        category: "pants",
+        subcategory: "Chinos",
+        price: 1899,
+        discountedPrice: 1499,
+        description: "Earth tone brown chinos. Pairs well with denim shirts.",
+        sizes: ["30", "32", "34", "36"],
+        colors: ["brown"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600"],
+        isNew: false,
+        popularity: 84
+    },
+
+    // --- NEW SHIRTS (8 Items) ---
+    {
+        id: 88,
+        name: "Black Mandarin Shirt",
+        category: "shirts",
+        subcategory: "Casual Shirts",
+        price: 2199,
+        discountedPrice: 1799,
+        description: "Sleek black shirt with a mandarin collar. Minimalist style.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["black"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=600"],
+        isNew: true,
+        popularity: 89
+    },
+    {
+        id: 89,
+        name: "Navy Polka Dot Shirt",
+        category: "shirts",
+        subcategory: "Casual Shirts",
+        price: 1999,
+        discountedPrice: 1599,
+        description: "Fun polka dot print on navy base. Great for Fridays.",
+        sizes: ["M", "L", "XL"],
+        colors: ["navy"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600"],
+        isNew: false,
+        popularity: 85
+    },
+    {
+        id: 90,
+        name: "White Formal Shirt",
+        category: "shirts",
+        subcategory: "Formal Shirts",
+        price: 2499,
+        discountedPrice: 1999,
+        description: "Crisp white formal shirt with spread collar. Wrinkle-free.",
+        sizes: ["38", "40", "42", "44"],
+        colors: ["white"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1589156280159-27698a70f29e?w=600"],
+        isNew: false,
+        popularity: 93
+    },
+    {
+        id: 91,
+        name: "Olive Utility Shirt",
+        category: "shirts",
+        subcategory: "Casual Shirts",
+        price: 2299,
+        discountedPrice: 1899,
+        description: "Double pocket utility shirt in olive green.",
+        sizes: ["M", "L", "XL"],
+        colors: ["olive"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1574634534894-89d7576c8259?w=600"],
+        isNew: true,
+        popularity: 87
+    },
+    {
+        id: 92,
+        name: "Beige Linen Shirt",
+        category: "shirts",
+        subcategory: "Casual Shirts",
+        price: 2699,
+        discountedPrice: 2199,
+        description: "Natural beige linen texture. Airy and light.",
+        sizes: ["S", "M", "L"],
+        colors: ["beige"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600"],
+        isNew: false,
+        popularity: 90
+    },
+    {
+        id: 93,
+        name: "Red Check Flannel",
+        category: "shirts",
+        subcategory: "Casual Shirts",
+        price: 1899,
+        discountedPrice: 1499,
+        description: "Bold red and black check flannel shirt.",
+        sizes: ["M", "L", "XL", "XXL"],
+        colors: ["red"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600"],
+        isNew: false,
+        popularity: 92
+    },
+    {
+        id: 94,
+        name: "Grey Oxford Shirt",
+        category: "shirts",
+        subcategory: "Formal Shirts",
+        price: 1799,
+        discountedPrice: 1399,
+        description: "Essential grey oxford button-down.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["grey"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600"],
+        isNew: false,
+        popularity: 88
+    },
+    {
+        id: 95,
+        name: "Denim Shirt Light Wash",
+        category: "shirts",
+        subcategory: "Casual Shirts",
+        price: 2199,
+        discountedPrice: 1799,
+        description: "Light blue washed denim shirt. Soft handfeel.",
+        sizes: ["S", "M", "L"],
+        colors: ["blue"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1574634534894-89d7576c8259?w=600"],
+        isNew: true,
+        popularity: 86
+    },
+
+    // --- NEW T-SHIRTS (8 Items) ---
+    {
+        id: 96,
+        name: "Black Oversized Tee",
+        category: "tshirts",
+        subcategory: "T-Shirts",
+        price: 1199,
+        discountedPrice: 899,
+        description: "Trend-setting oversized fit in jet black.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["black"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600"],
+        isNew: true,
+        popularity: 95
+    },
+    {
+        id: 97,
+        name: "White Pocket Tee",
+        category: "tshirts",
+        subcategory: "T-Shirts",
+        price: 799,
+        discountedPrice: 599,
+        description: "Classic white tee with a single chest pocket.",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+        colors: ["white"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600"],
+        isNew: false,
+        popularity: 91
+    },
+    {
+        id: 98,
+        name: "Navy Striped Tee",
+        category: "tshirts",
+        subcategory: "T-Shirts",
+        price: 899,
+        discountedPrice: 699,
+        description: "Nautical stripes in navy and white.",
+        sizes: ["M", "L", "XL"],
+        colors: ["navy"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600"],
+        isNew: false,
+        popularity: 87
+    },
+    {
+        id: 99,
+        name: "Olive Green Henley",
+        category: "tshirts",
+        subcategory: "T-Shirts",
+        price: 999,
+        discountedPrice: 799,
+        description: "Rugged henley neck in olive drab.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["olive"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600"],
+        isNew: true,
+        popularity: 84
+    },
+    {
+        id: 100,
+        name: "Grey Melange V-Neck",
+        category: "tshirts",
+        subcategory: "T-Shirts",
+        price: 849,
+        discountedPrice: 649,
+        description: "Soft melange fabric V-neck.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["grey"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600"],
+        isNew: false,
+        popularity: 82
+    },
+    {
+        id: 101,
+        name: "Red Graphic Tee",
+        category: "tshirts",
+        subcategory: "T-Shirts",
+        price: 999,
+        discountedPrice: 749,
+        description: "Bold red tee with vintage print.",
+        sizes: ["M", "L", "XL"],
+        colors: ["red"],
+        stock: "low-stock",
+        images: ["https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=600"],
+        isNew: true,
+        popularity: 89
+    },
+    {
+        id: 102,
+        name: "Beige Drop Shoulder",
+        category: "tshirts",
+        subcategory: "T-Shirts",
+        price: 1099,
+        discountedPrice: 849,
+        description: "Relaxed beige tee with dropped shoulders.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["beige"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600"],
+        isNew: false,
+        popularity: 86
+    },
+    {
+        id: 103,
+        name: "Black Long Sleeve",
+        category: "tshirts",
+        subcategory: "T-Shirts",
+        price: 1199,
+        discountedPrice: 999,
+        description: "Essential black long sleeve t-shirt.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["black"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600"],
+        isNew: false,
+        popularity: 88
+    },
+
+    // --- NEW HOODIES (8 Items) ---
+    {
+        id: 104,
+        name: "Grey Heather Hoodie",
+        category: "hoodies",
+        subcategory: "Hoodies",
+        price: 2399,
+        discountedPrice: 1899,
+        description: "Classic grey heather pullover.",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+        colors: ["grey"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600"],
+        isNew: false,
+        popularity: 94
+    },
+    {
+        id: 105,
+        name: "Black Zip-Up Hoodie",
+        category: "hoodies",
+        subcategory: "Hoodies",
+        price: 2699,
+        discountedPrice: 2199,
+        description: "Everyday black zip hoodie.",
+        sizes: ["M", "L", "XL"],
+        colors: ["black"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600"],
+        isNew: false,
+        popularity: 91
+    },
+    {
+        id: 106,
+        name: "Navy Pullover",
+        category: "hoodies",
+        subcategory: "Hoodies",
+        price: 2299,
+        discountedPrice: 1799,
+        description: "Deep navy blue hoodie. Fleece lined.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["navy"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600"],
+        isNew: false,
+        popularity: 89
+    },
+    {
+        id: 107,
+        name: "Beige Oversized Hoodie",
+        category: "hoodies",
+        subcategory: "Hoodies",
+        price: 2899,
+        discountedPrice: 2399,
+        description: "Kanye-inspired beige oversized hoodie.",
+        sizes: ["M", "L", "XL"],
+        colors: ["beige"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600"],
+        isNew: true,
+        popularity: 96
+    },
+    {
+        id: 108,
+        name: "Olive Street Hoodie",
+        category: "hoodies",
+        subcategory: "Hoodies",
+        price: 2599,
+        discountedPrice: 2099,
+        description: "Olive green hoodie with street fit.",
+        sizes: ["S", "M", "L"],
+        colors: ["olive"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600"],
+        isNew: true,
+        popularity: 87
+    },
+    {
+        id: 109,
+        name: "White Graphic Hoodie",
+        category: "hoodies",
+        subcategory: "Hoodies",
+        price: 2499,
+        discountedPrice: 1999,
+        description: "White hoodie with back print.",
+        sizes: ["M", "L", "XL"],
+        colors: ["white"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600"],
+        isNew: false,
+        popularity: 90
+    },
+    {
+        id: 110,
+        name: "Red Cropped Hoodie",
+        category: "hoodies",
+        subcategory: "Hoodies",
+        price: 2199,
+        discountedPrice: 1699,
+        description: "Stylish cropped hoodie in red.",
+        sizes: ["S", "M", "L"],
+        colors: ["red"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600"],
+        isNew: true,
+        popularity: 85
+    },
+    {
+        id: 111,
+        name: "Camo Print Hoodie",
+        category: "hoodies",
+        subcategory: "Hoodies",
+        price: 2999,
+        discountedPrice: 2499,
+        description: "Military camouflage print hoodie.",
+        sizes: ["M", "L", "XL"],
+        colors: ["green"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600"],
+        isNew: false,
+        popularity: 88
+    },
+
+    // --- NEW JACKETS (8 Items) ---
+    {
+        id: 112,
+        name: "Black Denim Jacket",
+        category: "jackets",
+        subcategory: "Jackets",
+        price: 3499,
+        discountedPrice: 2999,
+        description: "All black denim jacket. Faded wash.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["black"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=600"],
+        isNew: true,
+        popularity: 93
+    },
+    {
+        id: 113,
+        name: "Brown Leather Bomber",
+        category: "jackets",
+        subcategory: "Jackets",
+        price: 7999,
+        discountedPrice: 6499,
+        description: "Premium brown leather bomber jacket.",
+        sizes: ["M", "L", "XL"],
+        colors: ["brown"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600"],
+        isNew: false,
+        popularity: 89
+    },
+    {
+        id: 114,
+        name: "Navy Quilted Jacket",
+        category: "jackets",
+        subcategory: "Jackets",
+        price: 4499,
+        discountedPrice: 3699,
+        description: "Diamond quilted jacket in navy.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["navy"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=600"],
+        isNew: false,
+        popularity: 86
+    },
+    {
+        id: 115,
+        name: "Green Parka Coat",
+        category: "jackets",
+        subcategory: "Coats",
+        price: 4999,
+        discountedPrice: 3999,
+        description: "Heavy winter parka with fur hood.",
+        sizes: ["M", "L", "XL"],
+        colors: ["olive"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=600"],
+        isNew: true,
+        popularity: 91
+    },
+    {
+        id: 116,
+        name: "Grey Wool Peacoat",
+        category: "jackets",
+        subcategory: "Coats",
+        price: 5499,
+        discountedPrice: 4499,
+        description: "Smart grey wool peacoat.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["grey"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=600"],
+        isNew: false,
+        popularity: 88
+    },
+    {
+        id: 117,
+        name: "White Denim Jacket",
+        category: "jackets",
+        subcategory: "Jackets",
+        price: 3299,
+        discountedPrice: 2699,
+        description: "Fresh white denim jacket for summer.",
+        sizes: ["S", "M", "L"],
+        colors: ["white"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=600"],
+        isNew: true,
+        popularity: 85
+    },
+    {
+        id: 118,
+        name: "Varsity Light Blue",
+        category: "jackets",
+        subcategory: "Jackets",
+        price: 3199,
+        discountedPrice: 2599,
+        description: "Retro varsity jacket in light blue.",
+        sizes: ["M", "L", "XL"],
+        colors: ["blue"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1559551409-dadc959f76b8?w=600"],
+        isNew: true,
+        popularity: 92
+    },
+    {
+        id: 119,
+        name: "Black Puffer Vest",
+        category: "jackets",
+        subcategory: "Jackets",
+        price: 2999,
+        discountedPrice: 2299,
+        description: "Sleeveless puffer vest in shine black.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["black"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=600"],
+        isNew: false,
+        popularity: 87
+    },
+
+    // --- NEW SWEATERS & PERFUMES (8 Items) ---
+    {
+        id: 120,
+        name: "Beige Knit Cardigan",
+        category: "sweaters",
+        subcategory: "Cardigans",
+        price: 2499,
+        discountedPrice: 1999,
+        description: "Chunky knit cardigan in oatmeal beige.",
+        sizes: ["S", "M", "L"],
+        colors: ["beige"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?w=600"],
+        isNew: false,
+        popularity: 89
+    },
+    {
+        id: 121,
+        name: "Navy V-Neck Sweater",
+        category: "sweaters",
+        subcategory: "Sweaters",
+        price: 1999,
+        discountedPrice: 1599,
+        description: "Classic navy V-neck school style.",
+        sizes: ["S", "M", "L", "XL"],
+        colors: ["navy"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?w=600"],
+        isNew: false,
+        popularity: 84
+    },
+    {
+        id: 122,
+        name: "Grey Roll Neck",
+        category: "sweaters",
+        subcategory: "Sweaters",
+        price: 2199,
+        discountedPrice: 1799,
+        description: "Slim fit roll neck sweater in grey.",
+        sizes: ["M", "L", "XL"],
+        colors: ["grey"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?w=600"],
+        isNew: true,
+        popularity: 88
+    },
+    {
+        id: 123,
+        name: "Striped Knitwear",
+        category: "sweaters",
+        subcategory: "Sweaters",
+        price: 2299,
+        discountedPrice: 1899,
+        description: "Multi-colored striped knit sweater.",
+        sizes: ["S", "M", "L"],
+        colors: ["navy"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?w=600"],
+        isNew: true,
+        popularity: 83
+    },
+    {
+        id: 124,
+        name: "Aqua Di Gio Edition",
+        category: "perfumes",
+        subcategory: "Perfumes",
+        price: 3199,
+        discountedPrice: 2399,
+        description: "First Copy Luxury. Inspired by Aqua Di Gio. Fresh marine scent.",
+        sizes: ["100ml"],
+        colors: ["white"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600"],
+        isNew: false,
+        popularity: 95
+    },
+    {
+        id: 125,
+        name: "Sauvage Elixir Copy",
+        category: "perfumes",
+        subcategory: "Perfumes",
+        price: 3999,
+        discountedPrice: 2899,
+        description: "First Copy Luxury. Inspired by Sauvage Elixir. Intense and spicy.",
+        sizes: ["60ml"],
+        colors: ["navy"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1541643600914-78b084683601?w=600"],
+        isNew: true,
+        popularity: 97
+    },
+    {
+        id: 126,
+        name: "One Million Lucky",
+        category: "perfumes",
+        subcategory: "Perfumes",
+        price: 3499,
+        discountedPrice: 2699,
+        description: "First Copy Luxury. Inspired by 1 Million Lucky. Hazelnut and honey notes.",
+        sizes: ["100ml"],
+        colors: ["silver"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600"],
+        isNew: true,
+        popularity: 92
+    },
+    {
+        id: 127,
+        name: "Gucci Guilty Pour Homme",
+        category: "perfumes",
+        subcategory: "Perfumes",
+        price: 3699,
+        discountedPrice: 2799,
+        description: "First Copy Luxury. Inspired by Gucci Guilty. Woody and aromatic.",
+        sizes: ["90ml"],
+        colors: ["black"],
+        stock: "in-stock",
+        images: ["https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=600"],
+        isNew: true,
+        popularity: 90
+    }
 ];
 
 // ========================================
@@ -748,6 +1976,15 @@ let activeFilters = {
     maxPrice: 10000,
     sortBy: 'popularity'
 };
+
+// Lazy loading state
+const PRODUCTS_PER_PAGE = 12;
+let displayedCount = PRODUCTS_PER_PAGE;
+
+// User session state (stored in sessionStorage - clears on refresh)
+let userSession = JSON.parse(sessionStorage.getItem('wardrobeJamiaUser')) || null;
+let orderHistory = JSON.parse(sessionStorage.getItem('wardrobeJamiaOrders')) || [];
+let currentOTP = '';
 
 // ========================================
 // DOM ELEMENTS
@@ -773,6 +2010,21 @@ const mobileNav = document.getElementById('mobileNav');
 const menuToggle = document.getElementById('menuToggle');
 const toastContainer = document.getElementById('toastContainer');
 
+// New DOM elements
+const pageLoader = document.getElementById('pageLoader');
+const loadMoreBtn = document.getElementById('loadMoreBtn');
+const loadMoreContainer = document.getElementById('loadMoreContainer');
+const productsLoader = document.getElementById('productsLoader');
+const searchModal = document.getElementById('searchModal');
+const searchOverlay = document.getElementById('searchOverlay');
+const searchInput = document.getElementById('searchInput');
+const searchResults = document.getElementById('searchResults');
+const searchClear = document.getElementById('searchClear');
+const loginModal = document.getElementById('loginModal');
+const loginOverlay = document.getElementById('loginOverlay');
+const orderHistoryModal = document.getElementById('orderHistoryModal');
+const orderHistoryOverlay = document.getElementById('orderHistoryOverlay');
+
 // ========================================
 // INITIALIZATION
 // ========================================
@@ -783,6 +2035,8 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCartUI();
     updateCategoryCounts();
     setupEventListeners();
+    setupOTPInputs();
+    hideLoader();
 });
 
 // ========================================
@@ -893,6 +2147,46 @@ function setupEventListeners() {
             filterSidebar.classList.remove('active');
         }
     });
+
+    // ===== NEW EVENT LISTENERS =====
+
+    // Header navigation links
+    document.querySelectorAll('.nav-links a[data-filter]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const filter = link.dataset.filter;
+            handleNavigationFilter(filter);
+        });
+    });
+
+    // Search
+    document.getElementById('searchBtn').addEventListener('click', openSearch);
+    searchOverlay.addEventListener('click', closeSearch);
+    searchInput.addEventListener('input', debounce(handleSearch, 300));
+    searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeSearch();
+    });
+
+    // User/Login button
+    document.getElementById('userBtn').addEventListener('click', () => {
+        if (userSession) {
+            showLoginStep(3);
+        }
+        openLoginModal();
+    });
+    loginOverlay.addEventListener('click', closeLoginModal);
+
+    // Order history
+    orderHistoryOverlay.addEventListener('click', closeOrderHistory);
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            if (searchModal.classList.contains('active')) closeSearch();
+            if (loginModal.classList.contains('active')) closeLoginModal();
+            if (orderHistoryModal.classList.contains('active')) closeOrderHistory();
+        }
+    });
 }
 
 // ========================================
@@ -948,6 +2242,9 @@ function applyFilters() {
             filteredProducts.sort((a, b) => b.popularity - a.popularity);
             break;
     }
+
+    // Reset displayed count when filters change
+    displayedCount = PRODUCTS_PER_PAGE;
 
     renderProducts();
 }
@@ -1023,13 +2320,32 @@ function renderProducts() {
         productsGrid.innerHTML = '';
         noResults.style.display = 'block';
         productCount.textContent = '0';
+        loadMoreContainer.style.display = 'none';
         return;
     }
 
     noResults.style.display = 'none';
     productCount.textContent = filteredProducts.length;
 
-    productsGrid.innerHTML = filteredProducts.map(product => `
+    // Lazy loading - only show displayedCount products
+    const productsToShow = filteredProducts.slice(0, displayedCount);
+
+    // Update load more button visibility
+    if (displayedCount >= filteredProducts.length) {
+        loadMoreContainer.style.display = 'none';
+    } else {
+        loadMoreContainer.style.display = 'flex';
+        loadMoreBtn.style.display = 'block';
+        productsLoader.style.display = 'none';
+    }
+
+    productsGrid.innerHTML = productsToShow.map(product => {
+        // Check if product is in cart (with any size/color)
+        const cartItem = cart.find(item => item.productId === product.id);
+        const inCart = cartItem !== undefined;
+        const cartQty = inCart ? cartItem.quantity : 0;
+
+        return `
     <article class="product-card" onclick="openQuickView(${product.id})">
       <div class="product-image">
         <img src="${product.images[0]}" alt="${product.name}" loading="lazy">
@@ -1041,6 +2357,15 @@ function renderProducts() {
         <div class="product-actions">
           <button class="quick-view-btn" onclick="event.stopPropagation(); openQuickView(${product.id})">Quick View</button>
         </div>
+        ${inCart ? `
+          <div class="product-qty-controls" onclick="event.stopPropagation()">
+            <button class="product-qty-btn" onclick="event.stopPropagation(); updateProductCardQty(${product.id}, -1)">−</button>
+            <span class="product-qty-value">${cartQty}</span>
+            <button class="product-qty-btn" onclick="event.stopPropagation(); updateProductCardQty(${product.id}, 1)">+</button>
+          </div>
+        ` : `
+          <button class="product-buy-btn" onclick="event.stopPropagation(); quickAddToCart(${product.id})">Add to Cart</button>
+        `}
       </div>
       <div class="product-info">
         <p class="product-category">${product.subcategory}</p>
@@ -1052,9 +2377,46 @@ function renderProducts() {
             <span class="price-discount">-${Math.round((1 - product.discountedPrice / product.price) * 100)}%</span>
           ` : ''}
         </div>
+        ${inCart ? `
+          <div class="product-qty-controls mobile-only" onclick="event.stopPropagation()">
+            <button class="product-qty-btn" onclick="event.stopPropagation(); updateProductCardQty(${product.id}, -1)">−</button>
+            <span class="product-qty-value">${cartQty}</span>
+            <button class="product-qty-btn" onclick="event.stopPropagation(); updateProductCardQty(${product.id}, 1)">+</button>
+          </div>
+        ` : `
+          <button class="product-buy-btn mobile-only" onclick="event.stopPropagation(); quickAddToCart(${product.id})">Add to Cart</button>
+        `}
       </div>
     </article>
-  `).join('');
+  `}).join('');
+}
+
+// Update quantity controls on product cards
+function updateProductCardQty(productId, change) {
+    const cartItem = cart.find(item => item.productId === productId);
+    if (cartItem) {
+        cartItem.quantity += change;
+        if (cartItem.quantity <= 0) {
+            // Remove from cart
+            cart = cart.filter(item => item.productId !== productId);
+            showToast('Item removed from cart');
+        }
+        saveCart();
+        updateCartUI();
+        renderProducts(); // Re-render to update buttons
+    }
+}
+
+// Load more products function
+function loadMoreProducts() {
+    loadMoreBtn.style.display = 'none';
+    productsLoader.style.display = 'flex';
+
+    // Simulate loading delay for better UX
+    setTimeout(() => {
+        displayedCount += PRODUCTS_PER_PAGE;
+        renderProducts();
+    }, 800);
 }
 
 // ========================================
@@ -1618,6 +2980,421 @@ function debounce(func, wait) {
     };
 }
 
+// ========================================
+// PAGE LOADER & ANIMATIONS
+// ========================================
+
+function hideLoader() {
+    // Reduced wait time for snappier feel
+    setTimeout(() => {
+        pageLoader.classList.add('hidden');
+        setTimeout(() => {
+            pageLoader.style.display = 'none';
+            initScrollAnimations(); // Start animations after loader clears
+        }, 500);
+    }, 600);
+}
+
+function initScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el));
+}
+
+// ========================================
+// NAVIGATION FILTER
+// ========================================
+
+function handleNavigationFilter(filter) {
+    // Reset displayed count when filter changes
+    displayedCount = PRODUCTS_PER_PAGE;
+
+    switch (filter) {
+        case 'new-arrivals':
+            // Filter for new products
+            filteredProducts = products.filter(p => p.isNew);
+            break;
+        case 'sale':
+            // Filter for products on sale
+            filteredProducts = products.filter(p => p.price > p.discountedPrice);
+            break;
+        case 'shirts':
+        case 'pants':
+        case 'perfumes':
+            activeFilters.categories = [filter];
+            applyFilters();
+            document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+            return;
+        default:
+            filteredProducts = [...products];
+    }
+
+    // Reset category buttons
+    document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector('.category-btn[data-category="all"]').classList.add('active');
+    activeFilters.categories = [];
+
+    renderProducts();
+    document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+}
+
+// ========================================
+// QUICK ADD TO CART
+// ========================================
+
+function quickAddToCart(productId) {
+    const product = products.find(p => p.id === productId);
+    if (!product || product.stock === 'out-of-stock') return;
+
+    const selectedSize = product.sizes[0];
+    const selectedColor = product.colors[0];
+    const quantity = 1;
+
+    const cartItemId = `${productId}-${selectedSize}-${selectedColor}`;
+    const existingItem = cart.find(item => item.cartItemId === cartItemId);
+
+    if (existingItem) {
+        existingItem.quantity += quantity;
+    } else {
+        cart.push({
+            cartItemId,
+            productId,
+            name: product.name,
+            price: product.discountedPrice,
+            image: product.images[0],
+            size: selectedSize,
+            color: selectedColor,
+            quantity
+        });
+    }
+
+    saveCart();
+    updateCartUI();
+    renderProducts(); // Re-render to show quantity controls
+    showToast(`${product.name} added to cart!`);
+}
+
+// ========================================
+// SEARCH FUNCTIONS
+// ========================================
+
+function openSearch() {
+    searchModal.classList.add('active');
+    searchOverlay.classList.add('active');
+    searchInput.focus();
+    document.body.style.overflow = 'hidden';
+}
+
+function closeSearch() {
+    searchModal.classList.remove('active');
+    searchOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+    searchInput.value = '';
+    searchClear.classList.remove('visible');
+    searchResults.innerHTML = '<p class="search-hint">Start typing to search...</p>';
+}
+
+function clearSearch() {
+    searchInput.value = '';
+    searchClear.classList.remove('visible');
+    searchResults.innerHTML = '<p class="search-hint">Start typing to search...</p>';
+    searchInput.focus();
+}
+
+function handleSearch() {
+    const query = searchInput.value.trim().toLowerCase();
+
+    if (query.length === 0) {
+        searchClear.classList.remove('visible');
+        searchResults.innerHTML = '<p class="search-hint">Start typing to search...</p>';
+        return;
+    }
+
+    searchClear.classList.add('visible');
+
+    const results = products.filter(p =>
+        p.name.toLowerCase().includes(query) ||
+        p.description.toLowerCase().includes(query) ||
+        p.category.toLowerCase().includes(query) ||
+        p.subcategory.toLowerCase().includes(query)
+    );
+
+    if (results.length === 0) {
+        searchResults.innerHTML = '<p class="search-no-results">No products found for "' + query + '"</p>';
+        return;
+    }
+
+    searchResults.innerHTML = results.slice(0, 10).map(product => `
+        <div class="search-result-item" onclick="closeSearch(); openQuickView(${product.id});">
+            <img class="search-result-image" src="${product.images[0]}" alt="${product.name}">
+            <div class="search-result-info">
+                <p class="search-result-name">${product.name}</p>
+                <p class="search-result-category">${product.subcategory}</p>
+            </div>
+            <span class="search-result-price">₹${product.discountedPrice.toLocaleString()}</span>
+        </div>
+    `).join('');
+}
+
+// ========================================
+// LOGIN / OTP FUNCTIONS
+// ========================================
+
+function openLoginModal() {
+    loginModal.classList.add('active');
+    loginOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+
+    // Show appropriate step based on login status
+    if (userSession) {
+        showLoginStep(3);
+        document.getElementById('loggedInPhone').textContent = userSession.phone;
+    } else {
+        showLoginStep(1);
+    }
+}
+
+function closeLoginModal() {
+    loginModal.classList.remove('active');
+    loginOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function showLoginStep(step) {
+    document.querySelectorAll('.login-step').forEach(s => s.classList.remove('active'));
+    document.getElementById(`loginStep${step}`).classList.add('active');
+}
+
+function sendOTP() {
+    const phone = document.getElementById('phoneInput').value.trim();
+
+    if (!/^\d{10}$/.test(phone)) {
+        showToast('Please enter a valid 10-digit phone number', 'error');
+        return;
+    }
+
+    // Generate random 4-digit OTP
+    currentOTP = String(Math.floor(1000 + Math.random() * 9000));
+
+    // Display OTP (for demo purposes)
+    document.getElementById('demoOTP').textContent = currentOTP;
+    document.getElementById('displayPhone').textContent = '+91 ' + phone;
+
+    showLoginStep(2);
+    showToast('OTP sent successfully!');
+
+    // Focus first OTP input
+    setTimeout(() => {
+        document.querySelector('.otp-input').focus();
+    }, 100);
+}
+
+function resendOTP() {
+    currentOTP = String(Math.floor(1000 + Math.random() * 9000));
+    document.getElementById('demoOTP').textContent = currentOTP;
+    showToast('New OTP sent!');
+
+    // Clear and focus first input
+    document.querySelectorAll('.otp-input').forEach(input => input.value = '');
+    document.querySelector('.otp-input').focus();
+}
+
+function verifyOTP() {
+    const otpInputs = document.querySelectorAll('.otp-input');
+    const enteredOTP = Array.from(otpInputs).map(i => i.value).join('');
+
+    if (enteredOTP.length !== 4) {
+        showToast('Please enter the complete OTP', 'error');
+        return;
+    }
+
+    if (enteredOTP !== currentOTP) {
+        showToast('Invalid OTP. Please try again.', 'error');
+        return;
+    }
+
+    // Create user session
+    const phone = document.getElementById('phoneInput').value.trim();
+    userSession = {
+        phone: '+91 ' + phone,
+        loginTime: new Date().toISOString()
+    };
+    sessionStorage.setItem('wardrobeJamiaUser', JSON.stringify(userSession));
+
+    showToast('Login successful!');
+    showLoginStep(3);
+    document.getElementById('loggedInPhone').textContent = userSession.phone;
+}
+
+function setupOTPInputs() {
+    const otpInputs = document.querySelectorAll('.otp-input');
+
+    otpInputs.forEach((input, index) => {
+        input.addEventListener('input', (e) => {
+            const value = e.target.value.replace(/\D/g, '');
+            e.target.value = value.slice(0, 1);
+
+            if (value && index < otpInputs.length - 1) {
+                otpInputs[index + 1].focus();
+            }
+        });
+
+        input.addEventListener('keydown', (e) => {
+            if (e.key === 'Backspace' && !e.target.value && index > 0) {
+                otpInputs[index - 1].focus();
+            }
+        });
+
+        input.addEventListener('paste', (e) => {
+            e.preventDefault();
+            const pastedData = e.clipboardData.getData('text').replace(/\D/g, '').slice(0, 4);
+            pastedData.split('').forEach((char, i) => {
+                if (otpInputs[i]) {
+                    otpInputs[i].value = char;
+                }
+            });
+            if (pastedData.length > 0) {
+                otpInputs[Math.min(pastedData.length, otpInputs.length - 1)].focus();
+            }
+        });
+    });
+}
+
+function logout() {
+    userSession = null;
+    sessionStorage.removeItem('wardrobeJamiaUser');
+    showToast('Logged out successfully');
+    closeLoginModal();
+}
+
+// ========================================
+// ORDER HISTORY
+// ========================================
+
+function showOrderHistory() {
+    closeLoginModal();
+    orderHistoryModal.classList.add('active');
+    orderHistoryOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+
+    renderOrderHistory();
+}
+
+function closeOrderHistory() {
+    orderHistoryModal.classList.remove('active');
+    orderHistoryOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function renderOrderHistory() {
+    const ordersList = document.getElementById('ordersList');
+    const noOrders = document.getElementById('noOrders');
+
+    if (orderHistory.length === 0) {
+        noOrders.style.display = 'block';
+        ordersList.innerHTML = '';
+        return;
+    }
+
+    noOrders.style.display = 'none';
+
+    ordersList.innerHTML = orderHistory.map(order => `
+        <div class="order-card">
+            <div class="order-card-header">
+                <span class="order-id">${order.orderId}</span>
+                <span class="order-date">${new Date(order.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+                <span class="order-status">Confirmed</span>
+            </div>
+            <div class="order-items">
+                ${order.items.map(item => `
+                    <div class="order-item">
+                        <img class="order-item-image" src="${item.image}" alt="${item.name}">
+                        <div class="order-item-info">
+                            <p class="order-item-name">${item.name}</p>
+                            <p class="order-item-details">Size: ${item.size} | Qty: ${item.quantity}</p>
+                        </div>
+                        <span class="order-item-price">₹${(item.price * item.quantity).toLocaleString()}</span>
+                    </div>
+                `).join('')}
+            </div>
+            <div class="order-total">
+                <span>Total</span>
+                <span>₹${order.total.toLocaleString()}</span>
+            </div>
+        </div>
+    `).join('');
+}
+
+// ========================================
+// CHECKOUT OVERRIDE (require login)
+// ========================================
+
+const originalCheckout = checkout;
+function checkout() {
+    if (cart.length === 0) return;
+
+    if (!userSession) {
+        showToast('Please login to continue', 'error');
+        openLoginModal();
+        return;
+    }
+
+    closeCart();
+    openCheckout();
+}
+
+// Override placeOrder to save order history
+const originalPlaceOrder = placeOrder;
+function placeOrder() {
+    // Generate order ID
+    const now = new Date();
+    const datePart = now.getFullYear().toString() +
+        String(now.getMonth() + 1).padStart(2, '0') +
+        String(now.getDate()).padStart(2, '0');
+    const randomPart = String(Math.floor(10000000 + Math.random() * 90000000));
+    const orderId = 'WJ' + datePart + randomPart;
+    document.getElementById('orderId').textContent = orderId;
+
+    // Calculate total
+    const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    const shipping = subtotal >= 2999 ? 0 : 99;
+    const total = subtotal + shipping;
+
+    // Save order to history
+    const order = {
+        orderId,
+        date: new Date().toISOString(),
+        items: [...cart],
+        total
+    };
+    orderHistory.unshift(order);
+    sessionStorage.setItem('wardrobeJamiaOrders', JSON.stringify(orderHistory));
+
+    // Show success and hide review
+    document.getElementById('orderReview').style.display = 'none';
+    document.getElementById('orderSuccess').style.display = 'block';
+    document.querySelector('.checkout-footer').style.display = 'none';
+
+    // Clear cart
+    cart = [];
+    localStorage.setItem('wardrobeJamiaCart', JSON.stringify(cart));
+    updateCartUI();
+
+    showToast('Order placed successfully!');
+}
+
 // Make functions globally accessible
 window.openQuickView = openQuickView;
 window.closeQuickView = closeQuickView;
@@ -1643,4 +3420,16 @@ window.placeOrder = placeOrder;
 window.addToWishlist = addToWishlist;
 window.filterByCategory = filterByCategory;
 window.closeMobileNav = closeMobileNav;
-
+window.quickAddToCart = quickAddToCart;
+window.loadMoreProducts = loadMoreProducts;
+window.openSearch = openSearch;
+window.closeSearch = closeSearch;
+window.clearSearch = clearSearch;
+window.openLoginModal = openLoginModal;
+window.closeLoginModal = closeLoginModal;
+window.sendOTP = sendOTP;
+window.verifyOTP = verifyOTP;
+window.resendOTP = resendOTP;
+window.logout = logout;
+window.showOrderHistory = showOrderHistory;
+window.closeOrderHistory = closeOrderHistory;

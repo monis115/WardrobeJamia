@@ -13,6 +13,19 @@
 </head>
 
 <body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">Wardrobe<span>Jamia</span></div>
+            <div class="loader-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <p class="loader-text">Loading WardrobeJamia...</p>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="header">
         <div class="header-top">
@@ -22,11 +35,11 @@
             <a href="index.html" class="logo">Wardrobe<span>Jamia</span></a>
             <nav class="header-nav">
                 <ul class="nav-links">
-                    <li><a href="#" data-category="all">New Arrivals</a></li>
-                    <li><a href="#" data-category="shirts">Shirts</a></li>
-                    <li><a href="#" data-category="pants">Pants</a></li>
-                    <li><a href="#" data-category="perfumes">Perfumes</a></li>
-                    <li><a href="#" data-category="all">Sale</a></li>
+                    <li><a href="#" data-filter="new-arrivals">New Arrivals</a></li>
+                    <li><a href="#" data-filter="shirts">Shirts</a></li>
+                    <li><a href="#" data-filter="pants">Pants</a></li>
+                    <li><a href="#" data-filter="perfumes">Perfumes</a></li>
+                    <li><a href="#" data-filter="sale">Sale</a></li>
                 </ul>
             </nav>
             <div class="header-icons">
@@ -36,10 +49,10 @@
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </button>
-                <button class="header-icon" id="wishlistBtn" aria-label="Wishlist">
+                <button class="header-icon" id="userBtn" aria-label="Account">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                 </button>
                 <button class="header-icon" id="cartBtn" aria-label="Shopping Cart">
@@ -75,7 +88,7 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
+        <div class="hero-content reveal-up active">
             <p class="hero-subtitle">New Season Collection</p>
             <h1 class="hero-title">Elevate Your Style</h1>
             <p class="hero-description">Discover premium fashion that blends luxury with everyday comfort. Shop the
@@ -88,7 +101,7 @@
     <!-- Main Content -->
     <main class="main-content" id="products">
         <!-- Filter Sidebar -->
-        <aside class="filter-sidebar" id="filterSidebar">
+        <aside class="filter-sidebar reveal-up" id="filterSidebar">
             <div class="filter-header">
                 <h2 class="filter-title">Filters</h2>
                 <button class="filter-clear" id="clearFilters">Clear All</button>
@@ -189,8 +202,18 @@
                     </select>
                 </div>
             </div>
-            <div class="products-grid" id="productsGrid">
+            <div class="products-grid reveal-up stagger-delay-2" id="productsGrid">
                 <!-- Products will be rendered here by JavaScript -->
+            </div>
+            <!-- Load More Products -->
+            <div class="load-more-container" id="loadMoreContainer">
+                <div class="products-loader" id="productsLoader" style="display: none;">
+                    <div class="mini-spinner"></div>
+                    <span>Loading more products...</span>
+                </div>
+                <button class="load-more-btn" id="loadMoreBtn" onclick="loadMoreProducts()">
+                    Load More Products
+                </button>
             </div>
             <div class="no-results" id="noResults" style="display: none;">
                 <h3>No products found</h3>
@@ -690,6 +713,118 @@
     <!-- Toast Container -->
     <div class="toast-container" id="toastContainer"></div>
 
+    <!-- Search Modal -->
+    <div class="search-overlay" id="searchOverlay"></div>
+    <div class="search-modal" id="searchModal">
+        <div class="search-header">
+            <div class="search-input-container">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <input type="text" id="searchInput" placeholder="Search products..." autocomplete="off">
+                <button class="search-clear" id="searchClear" onclick="clearSearch()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <button class="search-close-btn" onclick="closeSearch()">Cancel</button>
+        </div>
+        <div class="search-results" id="searchResults">
+            <p class="search-hint">Start typing to search...</p>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="login-overlay" id="loginOverlay"></div>
+    <div class="login-modal" id="loginModal">
+        <button class="login-close" onclick="closeLoginModal()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <!-- Login Step -->
+        <div class="login-step active" id="loginStep1">
+            <div class="login-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+            </div>
+            <h2 class="login-title">Login to Continue</h2>
+            <p class="login-subtitle">Enter your phone number to receive OTP</p>
+            <div class="phone-input-group">
+                <span class="country-code">+91</span>
+                <input type="tel" id="phoneInput" placeholder="Phone Number" maxlength="10" pattern="[0-9]{10}">
+            </div>
+            <button class="login-btn" onclick="sendOTP()">Send OTP</button>
+        </div>
+
+        <!-- OTP Step -->
+        <div class="login-step" id="loginStep2">
+            <div class="login-icon success">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+            </div>
+            <h2 class="login-title">Enter OTP</h2>
+            <p class="login-subtitle">OTP sent to <span id="displayPhone">+91 XXXXXXXXXX</span></p>
+            <div class="otp-demo-box" id="otpDemoBox">
+                <span>Demo OTP:</span>
+                <strong id="demoOTP">1234</strong>
+            </div>
+            <div class="otp-input-group">
+                <input type="text" class="otp-input" maxlength="1" data-index="0">
+                <input type="text" class="otp-input" maxlength="1" data-index="1">
+                <input type="text" class="otp-input" maxlength="1" data-index="2">
+                <input type="text" class="otp-input" maxlength="1" data-index="3">
+            </div>
+            <button class="login-btn" onclick="verifyOTP()">Verify OTP</button>
+            <button class="resend-btn" onclick="resendOTP()">Resend OTP</button>
+        </div>
+
+        <!-- Logged In Step -->
+        <div class="login-step" id="loginStep3">
+            <div class="login-icon success">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+            </div>
+            <h2 class="login-title">Welcome Back!</h2>
+            <p class="login-subtitle" id="loggedInPhone">+91 XXXXXXXXXX</p>
+            <button class="login-btn secondary" onclick="showOrderHistory()">View Order History</button>
+            <button class="login-btn danger" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <!-- Order History Modal -->
+    <div class="order-history-overlay" id="orderHistoryOverlay"></div>
+    <div class="order-history-modal" id="orderHistoryModal">
+        <div class="order-history-header">
+            <h2>Order History</h2>
+            <button class="order-history-close" onclick="closeOrderHistory()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="order-history-content" id="orderHistoryContent">
+            <div class="no-orders" id="noOrders">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+                <p>No orders yet</p>
+                <span>Your order history will appear here</span>
+            </div>
+            <div class="orders-list" id="ordersList"></div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-main">
@@ -697,6 +832,17 @@
                 <span class="logo">Wardrobe<span>Jamia</span></span>
                 <p>Your destination for premium fashion that combines luxury aesthetics with everyday affordability.
                     Quality craftsmanship meets modern style.</p>
+                <div class="store-address">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        width="20" height="20">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span>i-1, Muradi Rd, opposite AXIS BANK ATM, Jamia, Batla House, Jamia Nagar, Okhla, New Delhi,
+                        Delhi 110025</span>
+                </div>
                 <div class="social-links">
                     <a href="#" class="social-link" aria-label="Facebook">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
